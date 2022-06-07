@@ -1,0 +1,70 @@
+
+    *{margin:0; padding:0; box-sizing: border-box;}
+
+    form{
+        background-color: rgb(177, 149, 112);
+        max-width: 500px;
+        width: 70%;
+        padding: 35px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    form[type=a]{
+        background-color: rgb(177, 149, 112);
+        max-width: 500px;
+        width: 70%;
+        padding: 35px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    input[type=search]{
+        width: 15%;
+        position: relative;
+        left: 45%;
+        height: 35px;
+        cursor: pointer;
+        border: none;
+        margin-top: -40px;
+        top: 20px;
+    }
+    button[type=pesqui]{
+        width: 5%;
+        position: relative;
+        background-color: rgb(247, 87, 38);
+        left: 47%;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        margin-top: 0px;
+    }
+    a[type=sair]{
+        width: 5%;
+        position: relative;
+        background-color: rgb(247, 87, 38);
+        left: 48%;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        margin-top: 0px;
+    }
+    button{
+        width: 99%;
+        height: 35px;
+        cursor: pointer;
+        border: none;
+        margin-top: 10px;
+    }
+    a[type=button]{
+        width: 99%;
+        height: 35px;
+        cursor: pointer;
+        border: none;
+        margin-top: 10px; 
+    }
+    label{
+        margin-top: 10px;
+    }

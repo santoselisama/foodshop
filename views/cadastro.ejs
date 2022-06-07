@@ -1,0 +1,25 @@
+<%- include ('./partials/header.ejs') %>
+
+<body>
+    <form method="POST" action="/cadastro" type="cad">
+      <h5><strong>
+        <label for="inputNome" class="col-sm-2 control-label">Nome:</label>
+        <input type="text" name="nome" id="nome"class="form-control" placeholder="Insira seu nome...">
+
+        <label for="inputCPF" class="col-sm-2 control-label">CPF:</label>
+        <input type="text" name="cpf" id="cpf" class="form-control cpf" placeholder="Insira seu CPF...">
+
+        <label for="inputEmail" class="col-sm-2 control-label">E-mail:</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="email@email.com">
+
+        <label for="inputSenha" class="col-sm-2 control-label">Senha:</label>
+        <input type="password" name="senha" id="senha" class="form-control"  placeholder="Crie uma senha...">
+      </h5></strong>
+      <button type="criar" class="btn btn-dark">Criar Conta</button>
+
+      <a class="btn btn-dark" type="button" href="/" role="button">Fazer Login</a>
+      <a class="btn btn-dark" type="button" href="/" role="button">Esqueci a Senha</a>
+    </form>
+</body>
+
+<%- include ('./partials/footer.ejs') %>

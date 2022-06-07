@@ -1,0 +1,23 @@
+<%- include ('./partials/header.ejs') %>
+
+<body>
+  <body>
+    <form method="POST" action="/auth">
+      <h5><strong>
+        
+        <label for="inputEmail" class="col-sm-2 control-label">E-mail:</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="email@email.com">
+
+        <label for="inputSenha" class="col-sm-2 control-label">Senha:</label>
+        <input type="password" name="senha" id="senha" class="form-control"  placeholder="*******">
+      </h5></strong>
+      
+      <button type="entrar" class="btn btn-dark">Entrar</button>
+
+      <h6><strong><label for="inputPassword3" class="text">Não possui cadastro?</label></h6></strong> 
+
+      <a class="btn btn-dark" type="button" href="/cadastro" role="button">Clique Aqui!</a>
+    </form>
+</body>
+
+<%- include ('./partials/footer.ejs') %>
