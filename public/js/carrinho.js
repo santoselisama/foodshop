@@ -34,7 +34,7 @@ const adicionarAoCarrinho = (e) => {
 	const precoNum = +preco.replace("R$ ", "").replace(",", ".");
 	const nomePrato = cardTitle.querySelectorAll(".nome-prato")[0].innerText;
 	total += precoNum;
-	localStorage.setItem("total", total);
+	localStorage.setItem("total", total.toFixed(2));
 	carrinhoArray.push({ preco, nomePrato });
 	localStorage.setItem("carrinho", JSON.stringify(carrinhoArray));
 	console.log(precoNum, nomePrato, totalLocalStorage);
