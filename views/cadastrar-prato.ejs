@@ -1,0 +1,24 @@
+<%- include ('./partials/header.ejs') %> <%- include ('./partials/navbar.ejs') %>
+
+<body>
+	<div class="container">
+		<h1>Adicionar novo prato</h1>
+			<form method="POST" action="/admin/cadastrar" class="cadastrar-prato">
+				<h5><strong>
+					<label for="inputNomeProduto" class="col-sm-2 control-label">Nome:</label>
+					<input type="text" name="nomeProduto" id="nomeProduto"class="form-control" placeholder="Nome do prato">
+	
+					<label for="inputPreco" class="col-sm-2 control-label">Preço</label>
+					<input type="text" name="preco" id="preco" class="form-control " placeholder="Preço do prato">
+	
+					<label for="inputImagem" class="col-sm-2 control-label">Imagem</label>
+					<input type="text" name="imagem" id="imagem" class="form-control" placeholder="Link da imagem">
+	
+					<label for="inputDescricao" class="col-sm-2 control-label">Descrição</label>
+					<input type="text" name="descricao" id="descricao" class="form-control"  placeholder="Descrição">
+				</h5></strong>
+				<button type="criar" class="btn btn-primary">Cadastrar prato</button>
+			</form>
+	</div>
+</body>
+<%- include ('./partials/footer.ejs') %>

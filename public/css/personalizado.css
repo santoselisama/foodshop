@@ -1,70 +1,271 @@
-
-    *{margin:0; padding:0; box-sizing: border-box;}
-
-    form{
-        background-color: rgb(177, 149, 112);
-        max-width: 500px;
-        width: 70%;
-        padding: 35px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-    }
-    form[type=a]{
-        background-color: rgb(177, 149, 112);
-        max-width: 500px;
-        width: 70%;
-        padding: 35px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-    }
-    input[type=search]{
-        width: 15%;
-        position: relative;
-        left: 45%;
-        height: 35px;
-        cursor: pointer;
-        border: none;
-        margin-top: -40px;
-        top: 20px;
-    }
-    button[type=pesqui]{
-        width: 5%;
-        position: relative;
-        background-color: rgb(247, 87, 38);
-        left: 47%;
-        height: 40px;
-        border: none;
-        cursor: pointer;
-        margin-top: 0px;
-    }
-    a[type=sair]{
-        width: 5%;
-        position: relative;
-        background-color: rgb(247, 87, 38);
-        left: 48%;
-        height: 40px;
-        border: none;
-        cursor: pointer;
-        margin-top: 0px;
-    }
-    button{
-        width: 99%;
-        height: 35px;
-        cursor: pointer;
-        border: none;
-        margin-top: 10px;
-    }
-    a[type=button]{
-        width: 99%;
-        height: 35px;
-        cursor: pointer;
-        border: none;
-        margin-top: 10px; 
-    }
-    label{
-        margin-top: 10px;
-    }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+form {
+	background-color: rgb(177, 149, 112);
+	max-width: 500px;
+	width: 70%;
+	padding: 35px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.cadastrar-prato {
+	margin: 0 auto;
+	background-color: #fbfbfb;
+	max-width: initial;
+	width: 100%;
+	/* padding: initial; */
+	position: initial;
+	left: initial;
+	top: initial;
+	transform: initial;
+}
+form[type="a"] {
+	background-color: rgb(177, 149, 112);
+	max-width: 500px;
+	width: 70%;
+	padding: 35px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+a[type="carrinho"] {
+	background-color: rgb(248, 16, 16);
+	position: relative;
+	left: 3%;
+	height: 40px;
+	border: none;
+	cursor: pointer;
+	margin-top: 0px;
+}
+button {
+	width: 99%;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+	margin-top: 10px;
+}
+a[type="button"] {
+	width: 99%;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+	margin-top: 10px;
+}
+a[type="tamcal1"]{
+	width: 15%;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="tamcal2"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	left: 3%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="tamatum1"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: -7px;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="tamatum2"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: -7px;
+	left: 3%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="maistum"]{
+	width: 15%;
+	height: 35px;
+	top: -3%;
+	position: relative;
+	left: 60%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="mais"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	left: 60%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="tamussa1"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: 19px;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="tamussa2"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: 19px;
+	left: 3%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="maismussa"]{
+	width: 15%;
+	height: 35px;
+	top: 11%;
+	position: relative;
+	left: 60%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="tamport1"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: 3px;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="tamport2"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: 3px;
+	left: 3%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="maisport"]{
+	width: 15%;
+	height: 35px;
+	top: 3%;
+	position: relative;
+	left: 60%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="tamchoc1"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: 30px;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="tamchoc2"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: 30px;
+	left: 3%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="maischoc"]{
+	width: 15%;
+	height: 35px;
+	top: 15%;
+	position: relative;
+	left: 60%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="riso1"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: 4px;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="riso2"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: 4px;
+	left: 3%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="maisriso"]{
+	width: 15%;
+	height: 35px;
+	top: 2%;
+	position: relative;
+	left: 60%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="bug1"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: -5px;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="bug2"]{
+	width: 15%;
+	height: 35px;
+	position: relative;
+	top: -5px;
+	left: 3%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="maisbug"]{
+	width: 15%;
+	height: 35px;
+	top: -3%;
+	position: relative;
+	left: 60%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+a[type="maisbuguer"]{
+	width: 15%;
+	height: 35px;
+	top: -3%;
+	position: relative;
+	left: 80%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(248, 16, 16);
+}
+label {
+	margin-top: 10px;
+}
