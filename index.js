@@ -10,8 +10,6 @@ const usuariosModel = require("./database/Cadastro");
 const produtosModel = require("./database/Produto");
 const bcrypt = require("bcryptjs");
 
-app.use(express.static("public"));
-
 //Static
 app.use(express.static("public"));
 //BodyParser
@@ -70,7 +68,7 @@ app.get("/perfil",(req, res) => {
 });
 
 app.get("/inicio", (req, res) => {
-	res.render("inicio");
+	res.render("inicio")
 });
 
 app.post("/cadastro", (req, res) => {
