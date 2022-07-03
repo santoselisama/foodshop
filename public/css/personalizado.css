@@ -15,7 +15,7 @@ form {
 }
 .cadastrar-prato {
 	margin: 0 auto;
-	background-color: #fbfbfb;
+	background-color: rgb(177, 149, 112);
 	max-width: initial;
 	width: 100%;
 	/* padding: initial; */
@@ -35,7 +35,7 @@ form[type="a"] {
 	transform: translate(-50%, -50%);
 }
 a[type="carrinho"] {
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 	position: relative;
 	left: 3%;
 	height: 40px;
@@ -45,6 +45,39 @@ a[type="carrinho"] {
 }
 button {
 	width: 99%;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+	margin-top: 10px;
+}
+button[type="car"] {
+	background-color: rgb(190, 22, 22);
+	width: 17%;
+	height: 30px;
+	cursor: pointer;
+	border: none;
+	margin-top: -12px;
+}
+button[type="modal"] {
+	background-color: rgb(190, 22, 22);
+	width: 15%;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+	margin-top: 5px;	
+}
+
+button[type="modaldentro"] {
+	background-color: rgb(190, 22, 22);
+	width: 20%;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+	margin-top: -12px;
+}
+a[type="submit"] {
+	background-color: rgb(190, 22, 22);
+	width: 15%;
 	height: 35px;
 	cursor: pointer;
 	border: none;
@@ -62,7 +95,7 @@ a[type="tamcal1"]{
 	height: 35px;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="tamcal2"]{
 	width: 15%;
@@ -71,7 +104,7 @@ a[type="tamcal2"]{
 	left: 3%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="tamatum1"]{
 	width: 15%;
@@ -80,7 +113,7 @@ a[type="tamatum1"]{
 	top: -7px;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="tamatum2"]{
 	width: 15%;
@@ -90,7 +123,7 @@ a[type="tamatum2"]{
 	left: 3%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="maistum"]{
 	width: 15%;
@@ -100,7 +133,7 @@ a[type="maistum"]{
 	left: 60%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="mais"]{
 	width: 15%;
@@ -109,7 +142,7 @@ a[type="mais"]{
 	left: 60%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="tamussa1"]{
 	width: 15%;
@@ -118,7 +151,7 @@ a[type="tamussa1"]{
 	top: 19px;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="tamussa2"]{
 	width: 15%;
@@ -128,7 +161,7 @@ a[type="tamussa2"]{
 	left: 3%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="maismussa"]{
 	width: 15%;
@@ -138,7 +171,7 @@ a[type="maismussa"]{
 	left: 60%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="tamport1"]{
 	width: 15%;
@@ -147,7 +180,7 @@ a[type="tamport1"]{
 	top: 3px;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="tamport2"]{
 	width: 15%;
@@ -157,7 +190,7 @@ a[type="tamport2"]{
 	left: 3%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="maisport"]{
 	width: 15%;
@@ -167,7 +200,7 @@ a[type="maisport"]{
 	left: 60%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="tamchoc1"]{
 	width: 15%;
@@ -176,7 +209,7 @@ a[type="tamchoc1"]{
 	top: 30px;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="tamchoc2"]{
 	width: 15%;
@@ -186,7 +219,7 @@ a[type="tamchoc2"]{
 	left: 3%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="maischoc"]{
 	width: 15%;
@@ -196,7 +229,7 @@ a[type="maischoc"]{
 	left: 60%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="riso1"]{
 	width: 15%;
@@ -205,7 +238,7 @@ a[type="riso1"]{
 	top: 4px;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="riso2"]{
 	width: 15%;
@@ -215,7 +248,7 @@ a[type="riso2"]{
 	left: 3%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="maisriso"]{
 	width: 15%;
@@ -225,7 +258,7 @@ a[type="maisriso"]{
 	left: 60%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="bug1"]{
 	width: 15%;
@@ -234,7 +267,7 @@ a[type="bug1"]{
 	top: -5px;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="bug2"]{
 	width: 15%;
@@ -244,7 +277,7 @@ a[type="bug2"]{
 	left: 3%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="maisbug"]{
 	width: 15%;
@@ -254,7 +287,7 @@ a[type="maisbug"]{
 	left: 60%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 a[type="maisbuguer"]{
 	width: 15%;
@@ -264,7 +297,7 @@ a[type="maisbuguer"]{
 	left: 80%;
 	cursor: pointer;
 	border: none;
-	background-color: rgb(248, 16, 16);
+	background-color: rgb(190, 22, 22);
 }
 label {
 	margin-top: 10px;

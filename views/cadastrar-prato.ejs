@@ -2,22 +2,23 @@
 
 <body>
 	<div class="container">
-		<h1>Adicionar novo prato</h1>
+		<br><br>
 			<form method="POST" action="/admin/cadastrar" class="cadastrar-prato">
 				<h5><strong>
-					<label for="inputNomeProduto" class="col-sm-2 control-label">Nome:</label>
-					<input type="text" name="nomeProduto" id="nomeProduto"class="form-control" placeholder="Nome do prato">
+					<h3>Adicionar Prato</h3>
+					<label for="inputNomeProduto" class="label">Nome:</label>
+					<input type="text" name="nomeProduto" id="nomeProduto"class="form-control" placeholder="Nome do Prato">
 	
-					<label for="inputPreco" class="col-sm-2 control-label">Preço</label>
-					<input type="text" name="preco" id="preco" class="form-control " placeholder="Preço do prato">
+					<label for="inputPreco" class="label">Preço:</label>
+					<input type="text" name="preco" id="preco" class="form-control " placeholder="Preço do Prato">
 	
-					<label for="inputImagem" class="col-sm-2 control-label">Imagem</label>
-					<input type="text" name="imagem" id="imagem" class="form-control" placeholder="Link da imagem">
+					<label for="inputImagem" class="label">Imagem:</label>
+					<input type="text" name="imagem" id="imagem" class="form-control" placeholder="Imagem">
 	
-					<label for="inputDescricao" class="col-sm-2 control-label">Descrição</label>
+					<label for="inputDescricao" class="label">Descrição:</label>
 					<input type="text" name="descricao" id="descricao" class="form-control"  placeholder="Descrição">
 				</h5></strong>
-				<button type="criar" class="btn btn-primary">Cadastrar prato</button>
+				<button type="modal" class="btn btn-dark">Cadastrar</button>
 			</form>
 	</div>
 </body>

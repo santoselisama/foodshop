@@ -63,12 +63,8 @@ app.get("/bebidas", (req, res) => {
 	res.render("bebidas")
 });
 
-app.get("/perfil",(req, res) => {
-	res.render("perfil");
-});
-
-app.get("/foodshop", (req, res) => {
-	res.render("foodshop");
+app.get("/inicio", (req, res) => {
+	res.render("inicio");
 });
 
 app.post("/cadastro", (req, res) => {

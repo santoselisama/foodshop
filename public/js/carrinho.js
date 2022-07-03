@@ -21,6 +21,8 @@ if (carrinho)
 	<tr>
 			<td>${nomePrato}</td>
 			<td>${preco}</td>
+			<td></td>
+			<td><button type="car" class="btn btn-dark"><i class="fa fa-trash-o" aria-hidden="true"></i></td>
 	</tr>
 	`;
 		console.log(tbody);

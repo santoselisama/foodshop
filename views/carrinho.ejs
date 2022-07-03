@@ -1,18 +1,20 @@
 <%- include ('./partials/header.ejs') %> <%- include ('./partials/navbar.ejs') %>
 <body>
 	<div class="container">
-		<h1>Carrinho</h1>
+		<br>
 		<div class="row">
 			<div class="col-12 grid-margin">
 				<div class="card">
 					<div class="card-body">
-						<h4 class="card-title">Revise seu pedido</h4>
+						<h4 class="card-title">Resumo do Pedido</h4>
 						<div class="table-responsive">
 							<table class="table">
 								<thead>
 									<tr>
 										<th>Nome</th>
 										<th>Preço</th>
+										<th>Quant.</th>
+										<th>Excluir</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -23,8 +25,8 @@
 								</tbody>
 							</table>
 						</div>
-						<h2>Total: R$<span class="total-titulo">0</span></h2>
-						<button type="button" class="btn btn-primary btn-sm">Finalizar pedido</button>
+						<h4>Total: R$<span class="total-titulo">0</span></h4>
+						<a class="btn btn-dark" type="submit" href="/cadastro" role="button">Finalizar Compra</a>
 						</div>
 				</div>
 			</div>
