@@ -5,6 +5,7 @@ const produtosModel= new mongoose.Schema({
     preco: Number,
     imagem: String,
     descricao: String,
+    tipo: String,
 });
 
 const Produtos= mongoose.model("Produtos", produtosModel);

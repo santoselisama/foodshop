@@ -96,6 +96,7 @@ app.post("/admin/cadastrar", (req, res) => {
 	var preco = req.body.preco;
 	var imagem = req.body.imagem;
 	var descricao = req.body.descricao;
+	var tipo = req.body.tipo;
 
 	produtosModel
 		.create({
@@ -103,6 +104,7 @@ app.post("/admin/cadastrar", (req, res) => {
 			preco,
 			imagem,
 			descricao,
+			tipo,
 		})
 		.then(() => {
 			res.redirect("/");
