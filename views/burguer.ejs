@@ -1,82 +1,102 @@
-<%- include ('./partials/header.ejs') %>
-<%- include('./partials/navbar.ejs') %>
-
-<body>
-    <div class="container">
-        <center><h1>Sandwiches</h1></center>
-        <div class="card-group">
-              <div class="card">
-                <img class="card-img-top" src="/image/hamb/bacon.jpg" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <h5 class="card-title">X - Bacon</h5>
-                  <p class="card-text">Bacon, salada, cheddar e blend de carne.</p>
-                  <a href="#" type="maisbuguer" class="btn btn-dark">✚</a>
-                  
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="/image/hamb/cheddar.jpg" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <h5 class="card-title">X - Simples</h5>
-                  <p class="card-text">Blend de carne, salada, cheddar, pão bola.</p>
-                  <a href="#" type="maisbuguer" class="btn btn-dark">✚</a>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="/image/hamb/duascarne.jpg" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <h5 class="card-title">Carne Dupla</h5>
-                  <p class="card-text">Blend dupla, cebola caramelizada, cheddar e bacon.</p>
-                  <a href="#" type="maisbuguer" class="btn btn-dark">✚</a>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="/image/hamb/triplox.jpg" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <h5 class="card-title">Carne Tripla</h5>
-                  <p class="card-text">Blend tripla, cebola caramelizada, cheddar duplo e bacon.</p>
-                  <a href="#" type="maisbuguer" class="btn btn-dark">✚</a>
-                </div>
-              </div>
-                </div><br>
-                <div class="card-group">
-                    <div class="card">
-                      <img class="card-img-top" src="/image/hamb/xfrango.jpg" alt="Imagem de capa do card">
-                      <div class="card-body">
-                        <h5 class="card-title">X - Frango</h5>
-                        <p class="card-text">Frango empanado, cheddar, salada.</p>
-                        <a href="#" type="maisbuguer" class="btn btn-dark">✚</a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img class="card-img-top" src="/image/hamb/xegg.jpg" alt="Imagem de capa do card">
-                      <div class="card-body">
-                        <h5 class="card-title">X - Egg</h5>
-                        <p class="card-text">Blend de Carne, ovos, mussarela e barbecue.</p>
-                        <a href="#" type="maisbuguer" class="btn btn-dark">✚</a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img class="card-img-top" src="/image/hamb/xmilho.jpg" alt="Imagem de capa do card">
-                      <div class="card-body">
-                        <h5 class="card-title">X - Milho</h5>
-                        <p class="card-text">Frango ou Carne em cubo,milho ao queijo, barbecue.</p>
-                        <a href="#" type="maisbuguer" class="btn btn-dark">✚</a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img class="card-img-top" src="/image/hamb/xtudo.jpg" alt="Imagem de capa do card">
-                      <div class="card-body">
-                        <h5 class="card-title">X - Tudo</h5>
-                        <p class="card-text">Blend de Carne, salada, molho especial e bacon.</p>
-                        <a href="#" type="maisbuguer" class="btn btn-dark">✚</a>
-                      </div>
-                    </div>
-                      </div>
-              </div>
-          </div>
-          <br>
-          
-</body>
-
-<%- include ('./partials/footer.ejs') %>
+<center><h1>Sandwiches</h1></center>
+<div class="card-group">
+	<div class="card">
+		<img class="card-img-top" src="/image/hamb/bacon.jpg" alt="Imagem de capa do card" />
+		<div class="card-body">
+			<h5 class="card-title nome-prato">X - Bacon</h5>
+			<p class="card-text">Bacon, salada, cheddar e blend de carne.</p>
+			<h6>PREÇO :</h6>
+			<div>
+				<span class="preco">R$ 14,90</span>
+				<a href="#" type="mais" class="btn btn-dark add-carrinho">✚</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<img class="card-img-top" src="/image/hamb/cheddar.jpg" alt="Imagem de capa do card" />
+		<div class="card-body">
+			<h5 class="card-title nome-prato">X - Simples</h5>
+			<p class="card-text">Blend de carne, salada, cheddar, pão bola.</p>
+			<h6>PREÇO :</h6>
+			<div>
+				<span class="preco">R$ 12,90</span>
+				<a href="#" type="mais" class="btn btn-dark add-carrinho">✚</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<img class="card-img-top" src="/image/hamb/duascarne.jpg" alt="Imagem de capa do card" />
+		<div class="card-body">
+			<h5 class="card-title nome-prato">Carne Dupla</h5>
+			<p class="card-text">Blend dupla, cebola caramelizada, cheddar e bacon.</p>
+			<h6>PREÇO :</h6>
+			<div>
+				<span class="preco">R$ 19,90</span>
+				<a href="#" type="mais" class="btn btn-dark add-carrinho">✚</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<img class="card-img-top" src="/image/hamb/triplox.jpg" alt="Imagem de capa do card" />
+		<div class="card-body">
+			<h5 class="card-title nome-prato">Carne Tripla</h5>
+			<p class="card-text">Blend tripla, cebola caramelizada, cheddar duplo e bacon.</p>
+			<h6>PREÇO :</h6>
+			<div>
+				<span class="preco">R$ 25,90</span>
+				<a href="#" type="mais" class="btn btn-dark add-carrinho">✚</a>
+			</div>
+		</div>
+	</div>
+</div>
+<br />
+<div class="card-group">
+	<div class="card">
+		<img class="card-img-top" src="/image/hamb/xfrango.jpg" alt="Imagem de capa do card" />
+		<div class="card-body">
+			<h5 class="card-title nome-prato">X - Frango</h5>
+			<p class="card-text">Frango empanado, cheddar, salada.</p>
+			<h6>PREÇO :</h6>
+			<div>
+				<span class="preco">R$ 19,90</span>
+				<a href="#" type="mais" class="btn btn-dark add-carrinho">✚</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<img class="card-img-top" src="/image/hamb/xegg.jpg" alt="Imagem de capa do card" />
+		<div class="card-body">
+			<h5 class="card-title nome-prato">X - Egg</h5>
+			<p class="card-text">Blend de Carne, ovos, mussarela e barbecue.</p>
+			<h6>PREÇO :</h6>
+			<div>
+				<span class="preco">R$ 12,90</span>
+				<a href="#" type="mais" class="btn btn-dark add-carrinho">✚</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<img class="card-img-top" src="/image/hamb/xmilho.jpg" alt="Imagem de capa do card" />
+		<div class="card-body">
+			<h5 class="card-title nome-prato">X - Milho</h5>
+			<p class="card-text">Frango ou Carne em cubo,milho ao queijo, barbecue.</p>
+			<h6>PREÇO :</h6>
+			<div>
+				<span class="preco">R$ 15,90</span>
+				<a href="#" type="mais" class="btn btn-dark add-carrinho">✚</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<img class="card-img-top" src="/image/hamb/xtudo.jpg" alt="Imagem de capa do card" />
+		<div class="card-body">
+			<h5 class="card-title nome-prato">X - Tudo</h5>
+			<p class="card-text">Blend de Carne, salada, molho especial e bacon.</p>
+			<h6>PREÇO :</h6>
+			<div>
+				<span class="preco">R$ 25,90</span>
+				<a href="#" type="mais" class="btn btn-dark add-carrinho">✚</a>
+			</div>
+		</div>
+	</div>
+</div>

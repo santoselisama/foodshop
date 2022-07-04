@@ -47,24 +47,12 @@ app.get("/carrinho", (req, res) => {
 	res.render("carrinho");
 });
 
-app.get("/pizzas",(req, res) => {
-	res.render("pizzas");
-});
-
-app.get("/pratos", (req, res) => {
-	res.render("pratos")
-});
-
-app.get("/burguer", (req, res) => {
-	res.render("burguer")
-});
-
-app.get("/bebidas", (req, res) => {
-	res.render("bebidas")
-});
-
 app.get("/inicio", (req, res) => {
 	res.render("inicio");
+});
+
+app.get("/cardapio", (req, res) => {
+	res.render("cardapio");
 });
 
 app.post("/cadastro", (req, res) => {
