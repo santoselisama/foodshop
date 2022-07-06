@@ -23,8 +23,8 @@ if (carrinho)
 			<td>${preco}</td>
 			<td></td>
 			<td>
-				<button type="car" class="btn btn-dark">
-					<i class="fa fa-trash-o apagar" aria-hidden="true"></i>
+				<button type="car" class="btn btn-dark fa fa-trash-o apagar">
+					Apagar
 				</button>
 			</td>
 	</tr>
@@ -58,13 +58,14 @@ for (let i = 0; i < apagarItemBtn.length; i++) {
 	const btn = apagarItemBtn[i];
 	btn.addEventListener("click", (e) => {
 		const btnClicado = e.target;
+		console.log(btnClicado.parentElement.parentElement);
 		carrinho.forEach((item, index) => {
 			if (
-				btnClicado.parentElement.parentElement.parentElement.cells[0].innerText === item.nomePrato
+				btnClicado.parentElement.parentElement.cells[0].innerText === item.nomePrato
 			) {
 				carrinho.splice(index, 1);
 				console.log(carrinho);
-				btnClicado.parentElement.parentElement.parentElement.remove();
+				btnClicado.parentElement.parentElement.remove();
 				localStorage.setItem("carrinho", JSON.stringify(carrinho));
 				totalLocalStorage = Number(
 					totalLocalStorage - item.preco.replace("R$ ", "").replace(",", ".")

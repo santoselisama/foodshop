@@ -302,3 +302,8 @@ a[type="maisbuguer"]{
 label {
 	margin-top: 10px;
 }
+
+.apagar {
+	width: initial !important;
+	height: initial;
+}
