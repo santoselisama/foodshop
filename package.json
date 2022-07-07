@@ -1,4 +1,12 @@
 {
+  "name": "foodshop",
+  "version": "1.0.0",
+  "description": "Trabalho da unidade de ads",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
