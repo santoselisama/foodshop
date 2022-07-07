@@ -1,1 +1,1 @@
-web: node foodshop/index.js.
+web: node ./index.js.
