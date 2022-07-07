@@ -32,26 +32,26 @@ mongoose.connect(
 
 //rotas
 app.get("/", (req, res) => {
-	res.render("login"); // mudar para login depois
+	res.render("login");
 });
 
 app.get("/cadastro", (req, res) => {
 	res.render("cadastro");
 });
 
-app.get("/admin/cadastrar", (req, res) => {
+app.get("/admin/cadastrar", userAuth ,(req, res) => {
 	res.render("cadastrar-prato");
 });
 
-app.get("/carrinho", (req, res) => {
+app.get("/carrinho", userAuth ,(req, res) => {
 	res.render("carrinho");
 });
 
-app.get("/inicio", (req, res) => {
+app.get("/inicio", userAuth ,(req, res) => {
 	res.render("inicio");
 });
 
-app.get("/cardapio", (req, res) => {
+app.get("/cardapio", userAuth ,(req, res) => {
 	res.render("cardapio");
 });
 
