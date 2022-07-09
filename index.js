@@ -51,7 +51,7 @@ app.get("/inicio", userAuth ,(req, res) => {
 	res.render("inicio");
 });
 
-app.get("/cardapio", userAuth ,(req, res) => {
+app.get("/cardapio" ,(req, res) => {
 	res.render("cardapio");
 });
 

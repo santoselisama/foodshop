@@ -307,3 +307,8 @@ label {
 	width: initial !important;
 	height: initial;
 }
+
+.card-img-top {
+	max-width: 300px;
+	height: 200px;
+}
