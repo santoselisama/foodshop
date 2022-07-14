@@ -8,6 +8,7 @@ const userAuth = require("./middlewares/userAuth");
 
 const usuariosModel = require("./database/Cadastro");
 const produtosModel = require("./database/Produto");
+const pedidosModel = require("./database/Pedido");
 const bcrypt = require("bcryptjs");
 
 //Static
@@ -39,19 +40,22 @@ app.get("/cadastro", (req, res) => {
 	res.render("cadastro");
 });
 
-app.get("/admin/cadastrar", userAuth ,(req, res) => {
+app.get("/admin/cadastrar", userAuth, (req, res) => {
 	res.render("cadastrar-prato");
 });
 
-app.get("/carrinho", userAuth ,(req, res) => {
+app.get("/carrinho", (req, res) => {
+	// colocar userAuth depois
 	res.render("carrinho");
 });
 
-app.get("/inicio", userAuth ,(req, res) => {
+app.get("/inicio", (req, res) => {
+	// colocar userAuth depois
 	res.render("inicio");
 });
 
-app.get("/cardapio" ,(req, res) => {
+app.get("/cardapio", (req, res) => {
+	// colocar userAuth depois
 	res.render("cardapio");
 });
 
@@ -99,6 +103,23 @@ app.post("/admin/cadastrar", (req, res) => {
 		})
 		.catch((err) => {
 			res.redirect("cadastro");
+		});
+});
+
+app.post("/carrinho", (req, res) => {
+	var carrinho = req.body.nomeProduto;
+	var total = req.body.total;
+
+	pedidosModel
+		.create({
+			carrinho,
+			total,
+		})
+		.then(() => {
+			res.redirect("/inicio");
+		})
+		.catch((err) => {
+			res.redirect("/carrinho");
 		});
 });
 

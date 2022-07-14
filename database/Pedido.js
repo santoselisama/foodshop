@@ -1,7 +1,12 @@
 const mongoose = require("mongoose");
 
 const pedidosModel = new mongoose.Schema({
-	carrinho: Array,
+	carrinho: [
+		{
+			preco: String,
+			nomePrato: String,
+		},
+	],
 	total: String,
 });
 

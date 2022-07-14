@@ -1,7 +1,7 @@
 <%- include ('./partials/header.ejs') %> <%- include ('./partials/navbar.ejs') %>
 <body>
-	<div class="container">
-		<br>
+	<form method="POST" action="/carrinho" class="cadastrar-prato">
+		<br />
 		<div class="row">
 			<div class="col-12 grid-margin">
 				<div class="card">
@@ -25,12 +25,14 @@
 								</tbody>
 							</table>
 						</div>
-						<h4>Total: R$<span class="total-titulo">0</span></h4>
-						<a class="btn btn-dark" type="submit" href="/cadastro" role="button">Finalizar Compra</a>
-						</div>
+						<h4>Total: R$<span id="total" class="total-titulo">0</span></h4>
+						<!-- <a class="btn btn-dark" type="submit" href="/cadastro" role="button">Finalizar Compra</a> -->
+						<button type="modal" class="btn btn-dark">Finalizar Compra</button>
+					</div>
 				</div>
 			</div>
 		</div>
+	</form>
 </body>
 
 <%- include ('./partials/footer.ejs') %>
