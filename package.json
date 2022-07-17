@@ -9,12 +9,13 @@
     "mongoose": "^6.3.6",
     "nodemon": "^2.0.16"
   },
-  "name": "package",
+  "name": "foodshop",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
   },
   "repository": {
     "type": "git",
